@@ -14,3 +14,12 @@ class Parentform(models.Model):
     city = models.CharField(max_length255, null=True, blank=True)
     state = models.USStateField(null=True, blank=True)
     aip_code = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.name}"
+
+    class Form(models.Model):
+        contact+ models.ForeignKey(Contact, on_delete_models.CASCADE, related_name='notes')text = models.TextField(null=True, blank=True)date_added = models.DateTimeField(auto_now_add=True)
+
+        def __str__(self):
+            return f"{self.text}"   
