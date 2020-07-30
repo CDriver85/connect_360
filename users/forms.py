@@ -11,6 +11,8 @@ class parentForm(forms.ModelForm):
             'phone',
             'school',
             'number_of_devices',
+        ]
+            
 #         ]
 # class albumForm(forms.ModelForm):
 #     class Meta:

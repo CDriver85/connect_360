@@ -1,11 +1,11 @@
-
+from django import forms
 from django.shortcuts import render
 
 
 # Create your views here.
-class ParentalRequestForm(form.ModelForm):
+class ParentalRequestForm(forms.ModelForm):
     class meta:
-        model = form
+        model = ParentalRequest
         fields = [
             'name',
             'address1',
@@ -19,9 +19,6 @@ class ParentalRequestForm(form.ModelForm):
             'number_of_devices',
         ]
 
-class NoteForm(forms.ModelForm):
-  class Meta:
-    model = Note
-    fields = ['text']
+
   
 
