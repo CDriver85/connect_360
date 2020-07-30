@@ -8,11 +8,20 @@ class ParentalRequestForm(form.ModelForm):
         model = form
         fields = [
             'name',
+            'address1',
+            'address2',
+            'city',
+            'state',
+            'zip code',
             'email',
             'phone',
             'school',
             'number_of_devices',
         ]
 
-
+class NoteForm(forms.ModelForm):
+  class Meta:
+    model = Note
+    fields = ['text']
+  
 
