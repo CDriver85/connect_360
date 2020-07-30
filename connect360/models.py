@@ -4,7 +4,7 @@ from localflavor.us.models import USStateField, USZipCodeField
 
 
 # Create your models here.
-class ParentalRequest(models.Model):
+class ParentRequest(models.Model):
     
     name = models.CharFiel(max_length=255)
     (null=True, blank=True)
