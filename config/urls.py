@@ -15,7 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from connect360 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', 'donor_views', form_donors, name= donor_form),
+    path('donors/add/', donors_views.add_donors, name='add_donors'),
+    path('donors/<int:pk>/edit/',
+       donors_views.edit_donor,
+         name='edit_donor'),
+    path('donors/<int:pk>/delete/',
+    donors_views.delete_donor,
+         name='delete_donor'),
+    path('donor/<int:pk>', donor_views.donor_detail,         name='donor_detail'), 
+    path('donor/<int:donor_pk>/notes',     donors_views.add_note, name="add_note"),
+    path('donors/<int:pk>/verify', donors_views.verify_donor, name="verify_donor")
+
 ]
+     

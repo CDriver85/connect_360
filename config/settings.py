@@ -25,7 +25,7 @@ SECRET_KEY = 'l126ejd_v%w3d(vw#-sl1qjn=zshtlxh9x%_9bu03zht+k_ygs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['connect360--cass2020.repl.co','connect360.cass2020.repl.co']
 
 
 # Application definition
