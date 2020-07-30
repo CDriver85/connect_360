@@ -1,9 +1,8 @@
 from django.db import models
-from .models import Parent
 
 # Create your models here.
 
-class Parent(models.Model):
+class User(models.Model):
     name = models.CharField
     (max_length=225)
     email = models.CharField

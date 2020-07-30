@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 # Create your views here.
-class form(form.ModelForm):
+class ParentalRequestForm(form.ModelForm):
     class meta:
         model = form
         fields = [
