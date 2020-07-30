@@ -1,6 +1,5 @@
 from django.shortcuts import render
-import. django.form.forms
-form.models import form
+
 
 # Create your views here.
 class form(form.ModelForm):
