@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    Ordinary button
+    <button type="button">Add to the recycle bin</button>
+    <hr />
+    Button with red text
+    <button type="button" style="color: red;"><b>HTML Request A Device </b></button>
+    <hr />
+    Button with increased font size
+    <button type="button" style="font: bold 20px Arial;">Download the book </button><br />
+  </body>
+</html>
