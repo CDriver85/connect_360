@@ -25,6 +25,7 @@ SECRET_KEY = 'l126ejd_v%w3d(vw#-sl1qjn=zshtlxh9x%_9bu03zht+k_ygs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['connect360-1--genola.repl.co', 'connect360-1.genola.repl.co',]
 
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'connect360', 
     'users',
+
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,11 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+=======
+        'DIRS': [],
+>>>>>>> master
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

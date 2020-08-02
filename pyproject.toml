@@ -1,7 +1,11 @@
 [tool.poetry]
+<<<<<<< HEAD
 
 name = "connect360-1"
 
+=======
+name = "connect360"
+>>>>>>> master
 version = "0.1.0"
 description = ""
 authors = ["repl.it user <replituser@example.com>"]
@@ -9,8 +13,11 @@ authors = ["repl.it user <replituser@example.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 Django = "^3.0.8"
+<<<<<<< HEAD
 django-debug-toolbar = "^2.2"
 django-registration-redux = "^2.8"
+=======
+>>>>>>> master
 localflavor = "^1.8"
 
 [tool.poetry.dev-dependencies]

@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+
 import registration
 from django.contrib import admin
 from django.conf import settings
@@ -41,5 +42,5 @@ if settings.DEBUG:
         # url(r'^__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns
 
-    # view form 
-    # view for home page
+   
+
