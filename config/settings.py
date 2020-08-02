@@ -25,7 +25,11 @@ SECRET_KEY = 'l126ejd_v%w3d(vw#-sl1qjn=zshtlxh9x%_9bu03zht+k_ygs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['connect360--cass2020.repl.co','connect360.cass2020.repl.co']
+=======
+ALLOWED_HOSTS = []
+>>>>>>> master
 
 
 # Application definition
@@ -37,8 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'connect360', 
     'users',
+=======
+>>>>>>> master
 ]
 
 MIDDLEWARE = [

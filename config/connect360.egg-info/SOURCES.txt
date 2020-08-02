@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-README.md
-=======
->>>>>>> master
 setup.py
 connect360/__init__.py
 connect360/admin.py
 connect360/apps.py
 connect360/models.py
-<<<<<<< HEAD
-=======
-connect360/parent_form
->>>>>>> master
 connect360/tests.py
 connect360/views.py
 connect360.egg-info/PKG-INFO
