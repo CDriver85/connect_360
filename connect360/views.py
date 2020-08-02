@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect,get_object_or_404
 
-from .models import Donors
+from .models import Donor
 from .forms import DonorForm
 
 def donor_form(request):
-    donors = Donors.objects.all()
+    donors = Donor.objects.all()
     if request.method == 'GET':
         form = DonorForm()
     else:
