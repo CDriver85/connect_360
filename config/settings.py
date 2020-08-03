@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['connect360--cass2020.repl.co','connect360.cass2020.repl.co']
 
+ALLOWED_HOSTS = []
+
+
 
 # Application definition
 
@@ -37,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'connect360', 
     'users',
+
 ]
 
 MIDDLEWARE = [

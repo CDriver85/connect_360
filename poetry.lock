@@ -59,17 +59,6 @@ version = "2.8"
 
 [[package]]
 category = "main"
-description = "Country-specific validation helpers, ported from Django Localflavor"
-name = "localflavor"
-optional = false
-python-versions = "*"
-version = "1.8"
-
-[package.dependencies]
-six = "1.11.0"
-
-[[package]]
-category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -93,7 +82,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.1"
 
 [metadata]
-content-hash = "32337ed80a1aae46e2d444cae92f7149f87c445293469a8e92a54b18093b3f66"
+content-hash = "6334c77c1b2f8621f4599555bda6cc2dec9c872a8727c0f612b03529a6318ffc"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -116,10 +105,6 @@ django-extensions = [
 django-registration-redux = [
     {file = "django-registration-redux-2.8.tar.gz", hash = "sha256:ed525f393c452d3f5044148131cafbf50da7bdec9f78b594450bf01ad67085d4"},
     {file = "django_registration_redux-2.8-py2.py3-none-any.whl", hash = "sha256:ed1ead5398e48bdc37064ab1e269b49301765701984e8d956a641aad2ff3a3ca"},
-]
-localflavor = [
-    {file = "localflavor-1.8-py3-none-any.whl", hash = "sha256:11fa5c32cb78cbb17e9a7727360afa972e99f896342e68f0e06b4910684cd9cc"},
-    {file = "localflavor-1.8.tar.gz", hash = "sha256:eb670e1db14a8e62c116c15177587bdb6db60ea07b810895c1ba14a81b237216"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
