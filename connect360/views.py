@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.shortcuts import render
 
 # Create your views here.
@@ -8,7 +7,6 @@ def index(request):
       
 def donorpage(request):
     return render(request, "connect360/donorpage.html")
-=======
 
 
 # # from django.contrib import admin
@@ -16,4 +14,4 @@ def donorpage(request):
 # from .models import User
 
 # admin.site.register(User, UserAdmin)
->>>>>>> master
+

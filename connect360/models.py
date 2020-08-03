@@ -4,7 +4,7 @@ from localflavor.us.models import USStateField, USZipCodeField
 
 
 # Create your models here.
-class ParentalRequest(models.Model):
+class ParentRequest(models.Model):
     phone_regex = RegexValidator(
         regex=r'^\+?\d{10}$',
         message="Phone number must be entered in the format: '+9999999999'.")
@@ -33,5 +33,7 @@ class ParentalRequest(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.text}"
+        return f"{self.name}"
+
+    
 
