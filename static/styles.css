@@ -1,16 +1,47 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Title of the document</title>
-  </head>
-  <body>
-    Ordinary button
-    <button type="button">Add to the recycle bin</button>
-    <hr />
-    Button with red text
-    <button type="button" style="color: red;"><b>HTML Request A Device </b></button>
-    <hr />
-    Button with increased font size
-    <button type="button" style="font: bold 20px Arial;">Download the book </button><br />
-  </body>
-</html>
+/* body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: aqua;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnam a:hover {
+    background-color: beige;
+    color: black;
+}
+.topnav a.active {
+     background-color: blue;
+     color: white;
+}
+
+<style>
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+<style>
+
+<div class="container">
+    <div class="vertical-center">
+    <button>Request A Device</button>
+</div> 
