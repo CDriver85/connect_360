@@ -13,7 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 98287b932a241266d6586f27a927e8f64a1f1241
 import registration
 from django.contrib import admin
 from django.conf import settings
@@ -51,9 +55,17 @@ if settings.DEBUG:
     # view form 
     # view for home page
      
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 98287b932a241266d6586f27a927e8f64a1f1241
 from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> 98287b932a241266d6586f27a927e8f64a1f1241
