@@ -6,10 +6,11 @@
 	<body>
 		<title>360 Connect</title>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-        <a><p><h1>360 Connect</h1></p></a>
-		<link href="styless.css" rel="stylesheet" type="text/css">
-
-		<style>
+       
+       <div class="ui large image"><img src="static/css/images/world.png" alt="logo" width="200" height="200"</div>
+        <h1>360 Connect</h1>
+		
+        <style>
 			.topnav {
 				background-color: grey;
 				overflow: hidden;
@@ -32,12 +33,10 @@
 			}
 		</style>
 		<div class='topnav'>
-			<a href="index.html">Home</a>
-			<nav><a href="parent.html">Parents</a></nav>
-			<a href="#donor">Donor</a>
-			<a href="#school">School</a>
-			<a href="#aboutus">About Us</a>
-			<a href="#contactus">Contact Us</a>
+			<a href="{% url 'index' %}">Home</a>
+			<a href="{% url 'parent' %}">Parent</a>
+			<a href="{% url 'school' %}">School</a>
+			<a href="{% url 'donor' %}">Donor</a>
 		</div>
 
 		<style>
@@ -50,16 +49,12 @@
 				transform: translate(-50%, -50%);
 			}
 		</style>
-
+ 
 		<div class="container">
 			<div class="center">
 				<button type="button" style="font: bold 20px Arial;">Request A Device </button><br/> 
         </div>
- 
-    <header class="v-header container">
-         <video class="fullscreen-video-wrap">
-            <source src="studying_36544.mp4" autoplay= "true" loop="true"></video>
-    </header>
+
             </div> 
                 <div class="header-overlay"></div>
                 <div class="header-content"></div>
@@ -74,4 +69,3 @@
 
     
 
-<!-- https://pixabay.com/videos/studying-children-i-am-a-student-36544/ -->

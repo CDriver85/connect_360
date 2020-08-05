@@ -1,4 +1,8 @@
-h1 {
+.ui large image {
+border: 10px solid transparent;
+padding: 15px;
+}
+.h1 {
   color:darkblue;
    }
 
@@ -35,30 +39,5 @@ h1 {
     margin:auto;
     text-align: center;
 }
-.fullscreen-video-wrap{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.fullscreen-video-wrap video{
-    min-width: 100%;
-    min-height: 100%;
-} 
-.header-overlya{
-    height:100vh;
-    width:100vw;
-    position: absolute;
-    top:0;
-    left:0;
-    background: gray;
-     z-index:1;
-     opacity: 0.75;
-}
-.header-content{
-    z-index:2;
-}
+
 

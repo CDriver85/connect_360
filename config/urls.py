@@ -27,10 +27,12 @@ urlpatterns = [
     
     path('admin/', admin.site.urls),
     
-    path('', views.index, name='home'),
+    path('', views.index, name='index'),
     path('', views.school, name='school'),
     path('', views.parent, name='parent'),
-   
+    path('', views.donor, name='donor'),
+    path('', views.contact, name='contact'),
+    path('', views.about, name='about'),
 ]   
 
 

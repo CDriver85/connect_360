@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'l126ejd_v%w3d(vw#-sl1qjn=zshtlxh9x%_9bu03zht+k_ygs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['connect360-1--genola.repl.co', 'connect360-1.genola.repl.co',]

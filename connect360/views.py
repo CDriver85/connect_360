@@ -11,6 +11,15 @@ def school(request):
 def parent(request):
     return render(request, "connect350/parent.html")
 
+def about(request):
+    return render(request, "connect350/about.html")    
+
+def contact(request):
+    return render(request, "connect350/contact.html")    
+
+def donor(request):
+    return render(request, "connect350/donor.html")
+
 
 # # from django.contrib import admin
 # from django.contrib.auth.admin import UserAdmin
