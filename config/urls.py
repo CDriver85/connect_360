@@ -28,7 +28,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('', views.index, name='home'),
-    path('', views.donorpage, name='donor'),
+    path('', views.school, name='school'),
+    path('', views.parent, name='parent'),
    
 ]   
 

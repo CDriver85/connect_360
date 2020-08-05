@@ -5,8 +5,11 @@ from django.shortcuts import render
 def index(request):
     return render(request, "connect360/index.html")
       
-def donorpage(request):
-    return render(request, "connect360/donorpage.html")
+def school(request):
+    return render(request, "connect360/school.html")
+
+def parent(request):
+    return render(request, "connect350/parent.html")
 
 
 # # from django.contrib import admin
