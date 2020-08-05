@@ -1,21 +1,25 @@
+h1 {
+  color:darkblue;
+   }
+
 .topnav {
-    background-color:rgb(98, 98, 155);
+    background-color:grey;
     overflow: hidden;
 }
 .topnav a {
     float: left;
-    color:  blanchedalmond;
+    color:  ob1f6c;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: beige;
+    background-color: C9CAD3;
     color:  bisque;
 }
 .topnav a.active {
-     background-color: rgb(13, 13, 90);
+     background-color: blue;
      color: white;
 }
 .v-header container {
