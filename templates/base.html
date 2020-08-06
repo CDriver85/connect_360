@@ -1,48 +1,42 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>360Connect</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.js"></script>
+  <script src="{% static 'js/main.js' %}" defer></script>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>360Connect</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js">
-
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.js">
-
-	</script>
-	<script src="{% static 'js/main.js' %}" defer>
-
-	</script>
-
-	<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}"  type="text/css"> 
 </head>
-
 <body class="sans-serif pv3 ph2 bg-light-red">
+    
+  <div class="mw9 center">
+       
+       <div class="ui large image"><img src="{% static 'images/world.png' %}" alt="logo" width="200" height="200"></div>
+        <h1>360 Connect</h1>
 
-	<div class="mw9 center">
-
-		<div class="logo_image"><img src="{% static 'images/world.png' %}"   alt="logo" width="200" height="200"></div>
-        
-<div class= "container1">
-    <div class='topnav'>
-        <ul class="menu"></ul>
-            <a href="{% url 'index' %}">Home</a>
-            <a href="{% url 'parent' %}">Parent</a>
-            <a href="{% url 'donor' %}">Donor</a>    
-            <a href="{% url 'school' %}">School</a>
-            <a href="{% url 'about' %}">About Us</a>
-            <a href="{% url 'contact' %}">Contact Us</a>          
+    <!-- <div class="container">	 -->
+		<div class='topnav1'>
+            <ul>
+                 <li><a href="{% url 'index' %}">Home</a></li>
+                 <li><a href="{% url 'parent' %}">Parent</a></li>
+                 <li><a href="{% url 'school' %}">School</a></li>
+                 <li><a href="{% url 'donor' %}">Donor</a></li>
+                 <li><a href="{% url 'about' %}">About Us</a></li>
+                 <li><a href="{% url 'contact' %}">Contact Us</a></ul></li>
+            </div>	
+		</div>
     </div>
-</div>
+		
  
 		<div class="button">
-			<div class="center">
-				<button type="button" style="font: bold 20px Arial;">Request A Device </button><br/> 
+			<button type="button" style="font: bold 20px Arial;">Request A Device </button><br/> 
         </div>
 
-            </div> 
+          
                 <div class="header-overlay"></div>
                 <div class="header-content"></div>
             </div>
@@ -59,3 +53,5 @@
   </div>
 </body>
 </html>
+
+	
