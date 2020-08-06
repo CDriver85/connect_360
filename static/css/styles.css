@@ -1,25 +1,21 @@
-.ui large image {
-border: 10px solid transparent;
-padding: 15px;
-}
 .h1 {
   color:darkblue;
    }
 
 .topnav {
-    background-color:grey;
+    background-color:blue ;
     overflow: hidden;
 }
 .topnav a {
     float: left;
-    color:  ob1f6c;
+    color: bisque;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 .topnav a:hover {
-    background-color: C9CAD3;
+    background-color: black;
     color:  bisque;
 }
 .topnav a.active {
