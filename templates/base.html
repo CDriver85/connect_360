@@ -19,7 +19,7 @@
 		<title>360 Connect</title>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
        
-       <div class="ui large image"><img src="static/css/images/world.png" alt="logo" width="200" height="200"</div>
+       <div class="ui large image"><img src="{% static 'images/world.png' %}" alt="logo" width="200" height="200"></div>
         <h1>360 Connect</h1>
 		
         <style>
@@ -48,8 +48,8 @@
 			<a href="{% url 'index' %}">Home</a>
 			<a href="{% url 'parent' %}">Parent</a>
 			<a href="{% url 'school' %}">School</a>
-			<a href="{% url 'about us' %}">About Us</a>
-			<<a href="{% url 'contactus' %}">Contact Us</a>
+			<a href="{% url 'about' %}">About Us</a>
+			<<a href="{% url 'contact' %}">Contact Us</a>
 			<a href="{% url 'donor' %}">Donor</a>
 		</div>
 
