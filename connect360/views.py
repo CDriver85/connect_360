@@ -34,10 +34,10 @@ def donor(request):
     if form.is_valid():
             form.save()
             return redirect(to='donor_thanks')
-    return render(request, "connect360/donor_thanks.html", {"form": form})
+    return render(request, "connect360/donorthanks.html", {"form": form})
 
 def donor_thanks(request):
-    return render(request, "connect360/donor_thanks.html")   
+    return render(request, "connect360/donorthanks.html")   
 
 
 
