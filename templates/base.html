@@ -1,66 +1,43 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>360Connect</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.js"></script>
-  <script src="{% static 'js/main.js' %}" defer></script>
 
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}"  type="text/css"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>360Connect</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.js">
+
+	</script>
+	<script src="{% static 'js/main.js' %}" defer>
+
+	</script>
+
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
 </head>
-<body class="sans-serif pv3 ph2 bg-light-red">
-    
-  <div class="mw9 center">
-       
-       <div class="ui large image"><img src="{% static 'images/world.png' %}" alt="logo" width="200" height="200"></div>
-        <h1>360 Connect</h1>
-		
-        <style>
-			.topnav {
-				background-color: grey;
-				overflow: hidden;
-            }
-			.topnav a {
-				float: left;
-				color: ob1f6c;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-size: 17px;
-			}
-			.topnav a:hover {
-				background-color: C9CAD3;
-				color: white;
-			}
-			.topnav a.active {
-				background-color: 3352FF;
-				color: white;
-			}
-		 </style>
-		<!-- <div class='topnav'>
-			<a href="{% url 'index' %}">Home</a>
-			<a href="{% url 'parent' %}">Parent</a>
-			<a href="{% url 'school' %}">School</a>
-			<a href="{% url 'about' %}">About Us</a>
-			<a href="{% url 'contact' %}">Contact Us</a>
-			<a href="{% url 'donor' %}">Donor</a>
-		</div> -->
 
-		<style>
-			.center {
-				margin: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				-ms-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-			}
-		</style>
+<body class="sans-serif pv3 ph2 bg-light-red">
+
+<div class="mw9 center">
+
+<div class="logo_image"><img src="{% static 'images/world.png' %}"   alt="logo" width="200" height="200"></div>
+        
+<div class= "container">
+    <div class='topnav'>
+        <ul class="menu"></ul>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'parent' %}">Parent</a>
+            <a href="{% url 'school' %}">School</a>
+            <a href="{% url 'about' %}">About Us</a>
+            <a href="{% url 'contact' %}">Contact Us</a>
+            <a href="{% url 'donor' %}">Donor</a>    
+    </div>
+</div>
  
-		<div class="container">
+		<div class="button">
 			<div class="center">
 				<button type="button" style="font: bold 20px Arial;">Request A Device </button><br/> 
         </div>
@@ -82,5 +59,3 @@
   </div>
 </body>
 </html>
-
-	

@@ -2,38 +2,46 @@
   color:darkblue;
    }
 
-.topnav {
-    background-color:blue ;
+.logo_image{
+    background-color: white;
     overflow: hidden;
-}
-.topnav a {
-    float: left;
-    color: bisque;
-    text-align: center;
+    height: 70px;
     padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    display: flex;
+    text-align: left
+}
+/* .container{
+    width: 90%;
+    margin: 0 auto;
+} */
+.menu {
+    float: right;
+}
+
+.topnav {
+    width: 100%;
+    float: right;
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px;
+    background: yellow;
 }
 .topnav a:hover {
     background-color: black;
-    color:  bisque;
+    color: red;
 }
-.topnav a.active {
-     background-color: blue;
-     color: white;
-}
-.v-header container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    color: rgb(50, 160, 46)
-}
-.container{
+.button{
     max-width: 900px;
     padding-left:1rem;
     padding-right:1rem;
     margin:auto;
     text-align: center;
 }
-
-
+.center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
