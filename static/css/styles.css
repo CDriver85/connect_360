@@ -1,20 +1,24 @@
 .h1 {
   color:darkblue;
-   }
-
+}
+.menu{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
 .topnav {
-    background-color: red ;
     overflow: hidden;
-}
-.topnav a {
-    float: left;
-    color: bisque;
+    width: 100%;
+    text-transform: uppercase;
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    background: gray;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    list-style:none;
 }
-.topnav a:hover {
+.topnav:hover {
     background-color: black;
     color:  bisque;
 }
@@ -26,12 +30,10 @@
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-/* .container{
-    max-width: 900px;
-    padding-left:1rem;
-    padding-right:1rem;
-    margin:auto;
-    text-align: center;
-} */
+.logo_img {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
 
 

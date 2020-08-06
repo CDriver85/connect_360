@@ -27,14 +27,13 @@ urlpatterns = [
     
     path('admin/', admin.site.urls),
     
-    path('', views.index, name='index'),
-    path('', views.school, name='school'),
-    path('', views.parent, name='parent'),
-    path('', views.donor, name='donor'),
-    path('', views.contact, name='contact'),
-    path('', views.about, name='about'),
+    path('', views.index, name='home'),
+    path('school/', views.school, name='school'),
+    path('parent/', views.parent, name='parent'),
+    path('donor/', views.donor, name='donor'),
+    path('contact/', views.contact, name='contact'),
+    path('about/', views.about, name='about'),
 ]   
-
 
 if settings.DEBUG:
     import debug_toolbar

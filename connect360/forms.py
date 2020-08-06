@@ -1,23 +1,23 @@
 from django.db import models
 from django import forms
 from django.shortcuts import render
-from .models import ParentalRequest
+from .models import ParentRequest
 
 # Create your views here.
-class ParentalRequestForm(forms.ModelForm):
-    class meta:
-        model = ParentalRequest
+class ParentRequestForm(forms.ModelForm):
+    class Meta:
+        model = ParentRequest
         fields = [
             'name',
-            'address1',
-            'address2',
+            'address_1',
+            'address_2',
             'city',
             'state',
-            'zip code',
+            'zip_code',
             'email',
             'phone',
             'school',
-            'number_of_devices',
+            'number_of_devices',           
         ]
 
 
