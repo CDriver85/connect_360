@@ -21,19 +21,19 @@
 
 <body class="sans-serif pv3 ph2 bg-light-red">
 
-<div class="mw9 center">
+	<div class="mw9 center">
 
-<div class="logo_image"><img src="{% static 'images/world.png' %}"   alt="logo" width="200" height="200"></div>
+		<div class="logo_image"><img src="{% static 'images/world.png' %}"   alt="logo" width="200" height="200"></div>
         
-<div class= "container">
+<div class= "container1">
     <div class='topnav'>
         <ul class="menu"></ul>
             <a href="{% url 'index' %}">Home</a>
             <a href="{% url 'parent' %}">Parent</a>
+            <a href="{% url 'donor' %}">Donor</a>    
             <a href="{% url 'school' %}">School</a>
             <a href="{% url 'about' %}">About Us</a>
-            <a href="{% url 'contact' %}">Contact Us</a>
-            <a href="{% url 'donor' %}">Donor</a>    
+            <a href="{% url 'contact' %}">Contact Us</a>          
     </div>
 </div>
  

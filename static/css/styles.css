@@ -10,25 +10,28 @@
     display: flex;
     text-align: left
 }
-/* .container{
+.container{
     width: 90%;
     margin: 0 auto;
-} */
-.menu {
-    float: right;
+   
 }
-
-.topnav {
+.menu {
+    float: right;   
+}
+.container1 {
     width: 100%;
+    text-transform: uppercase;
     float: right;
     overflow: hidden;
     height: 70px;
     line-height: 70px;
-    background: yellow;
+    background: gray;
+    text-align: center;
+    list-style:none;
 }
 .topnav a:hover {
     background-color: black;
-    color: red;
+    color: bisque;
 }
 .button{
     max-width: 900px;
