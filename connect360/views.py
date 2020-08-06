@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ParentRequestForm
+from .forms import DonorRequestForm
 
 # Create your views here.
 
@@ -26,7 +27,18 @@ def contact(request):
     return render(request, "connect360/contact.html")    
 
 def donor(request):
-    return render(request, "connect360/donor.html")
+    if request.method == 'GET':
+        form = DonorRequestForm()
+    else:
+        form = DonorRequestForm(data=request.POST)
+    if form.is_valid():
+            form.save()
+            return redirect(to='donor_thanks')
+    return render(request, "connect360/donor_thanks.html", {"form": form})
+
+def donor_thanks(request):
+    return render(request, "connect360/donor_thanks.html")   
+
 
 
 # # from django.contrib import admin

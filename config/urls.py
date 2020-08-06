@@ -33,6 +33,7 @@ urlpatterns = [
     path('donor/', views.donor, name='donor'),
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
+    path('donor_thanks/', views.about, name='donorthankyou'),
 ]   
 
 if settings.DEBUG:

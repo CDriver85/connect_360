@@ -2,6 +2,7 @@ from django.db import models
 from django import forms
 from django.shortcuts import render
 from .models import ParentRequest
+from .models import DonorRequest
 
 # Create your views here.
 class ParentRequestForm(forms.ModelForm):
@@ -20,7 +21,11 @@ class ParentRequestForm(forms.ModelForm):
             'number_of_devices',           
         ]
 
-
-  
-
-
+class DonorRequestForm(forms.ModelForm):
+    class Meta:
+        model = DonorRequest
+        fields = [
+            'name',
+            'address_1',
+            'email',
+        ]

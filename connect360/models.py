@@ -3,7 +3,7 @@ from django.core.validators import RegexValidator
 
 
 
-# Create your models here.
+# Create your models here
 class ParentRequest(models.Model):
     phone_regex = RegexValidator(
         regex=r'^\+?\d{10}$',
@@ -36,4 +36,10 @@ class ParentRequest(models.Model):
         return f"{self.name}"
 
     
+class DonorRequest(models.Model):
 
+    name = models.CharField(max_length=255, null=True, blank=True)
+
+    email = models.EmailField(max_length=255, null=True, blank=True)
+
+    address_1 = models.CharField(max_length=255, null=True, blank=True)
