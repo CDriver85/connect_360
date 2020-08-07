@@ -30,18 +30,22 @@
 <!-- <a href='#' class="logo_img"><img src="{% static 'images/world.png' %}" alt="logo" width="200" height="200"></div> -->
     
 
-		<div class='topnav'>
-            <nav><a href='#' class="logo_img"><img src="{% static 'images/world.png' %}" alt="logo" width="200" height="200">
-			    <div class='menu'>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'parent' %}">Parent</a></li>
-                <li><a href="{% url 'school' %}">School</a></li>
-                <li><a href="{% url 'donor' %}">Donor</a></li>
-                <li><a href="{% url 'about' %}">About Us</a></li>
-                <li><a href="{% url 'contact' %}">Contact Us</a></nav></li>
-		</div>
-
 		
+<div class="container"><img src="{% static 'images/world.png' %}" alt="logo" width="200" height="200">
+<div class="topleft"></div>
+			 
+
+<section>
+  <div class='body'</div>
+  <nav>
+    <ul class="menuItems">
+      <li><a href='#' data-item='Home'>Home</a></li>
+      <li><a href='#' data-item='About'>About</a></li>
+      <li><a href='#' data-item='Donor'>Donor</a></li>
+      <li><a href='#' data-item='parent''>Parent</a></li>
+      <li><a href='#' data-item='School'>School</a></li>
+    </ul>
+  </nav>	
           
    
     </head>
