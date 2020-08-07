@@ -2,16 +2,31 @@
 
 {% block content %}
 <p><h1>Parents</h1></p>
+<nav class="circle">
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+     
+      <li><a href="donor">Donor</a></li>
+      <li><a href="school">School</a></li>
+       <li><a href="contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</section>
 
 
- {% csrf_token %}
+{% csrf_token %}
 {{ form.as_p }}
+<li><a href="#">Submit Form</a></li>
+
+ 
+
 <div>
 <form action="{% url 'parent'}" method='POST'>
 </div>
 
 
-<li><a href="#">Nice staff</a></li>
+
 
 
 
