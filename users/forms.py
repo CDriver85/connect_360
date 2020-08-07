@@ -13,15 +13,11 @@ class parentForm(forms.ModelForm):
             'number_of_devices',
         ]
             
-#         ]
-# class albumForm(forms.ModelForm):
-#     class Meta:
-#         model = Album
-#         fields = [
-#             'title',
-#             'artist',
-#             'released',
-#             'image_url',
-#             'track_list',
-#         ]
-      
+class DonorRequestForm(forms.ModelForm):
+    class Meta:
+        model = DonorRequest
+        fields = [
+            'name',
+            'address_1',
+            'email',
+        ]

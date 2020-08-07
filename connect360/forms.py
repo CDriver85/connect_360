@@ -1,8 +1,7 @@
 from django.db import models
 from django import forms
-from django.shortcuts import render
-from .models import ParentRequest
-from .models import DonorRequest
+from .models import ParentRequest, DonorRequest
+
 
 # Create your views here.
 class ParentRequestForm(forms.ModelForm):

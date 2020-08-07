@@ -43,3 +43,7 @@ class DonorRequest(models.Model):
     email = models.EmailField(max_length=255, null=True, blank=True)
 
     address_1 = models.CharField(max_length=255, null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.name}"
+
