@@ -1,6 +1,6 @@
 from django.db import models
 from django import forms
-from .models import ParentRequest, DonorRequest
+from .models import ParentRequest, DonorForm
 
 
 # Create your views here.
@@ -20,11 +20,13 @@ class ParentRequestForm(forms.ModelForm):
             'number_of_devices',           
         ]
 
-class DonorRequestForm(forms.ModelForm):
+class DonorForm(forms.ModelForm):
     class Meta:
-        model = DonorRequest
+        model = DonorForm
         fields = [
             'name',
-            'address_1',
+            'phone',
             'email',
+            'number_of_devices',
+
         ]

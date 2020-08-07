@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .forms import ParentRequestForm
-from .forms import DonorRequestForm
+from .forms import DonorForm
 
 # Create your views here.
 
@@ -31,10 +31,10 @@ def donor(request):
         form = DonorRequestForm()
     else:
         form = DonorRequestForm(data=request.POST)
-    if form.is_valid():
+        if form.is_valid():
             form.save()
             return redirect(to='donor_thanks')
-    return render(request, "connect360/donorthanks.html", {"form": form})
+    return render(request, "connect360/donor.html", {"form": form})
 
 def donor_thanks(request):
     return render(request, "connect360/donorthanks.html")   

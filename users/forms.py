@@ -15,9 +15,10 @@ class parentForm(forms.ModelForm):
             
 class DonorRequestForm(forms.ModelForm):
     class Meta:
-        model = DonorRequest
+        model = Donor
         fields = [
             'name',
-            'address_1',
+            'phone_number',
             'email',
-        ]
+            'number_of_devices',
+            'school',

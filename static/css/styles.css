@@ -45,3 +45,27 @@ nav ul li a:before {
 nav ul li a:hover {
   color: #555;
 }
+
+/* Parent submit button */
+
+
+
+
+.headText {
+    text-align: center;
+    color: coal;
+    font-family: lato;
+    text-transform: uppercase;
+}
+.h1 {
+      font-size: 6em;
+      font-weight: 100;
+      margin-bottom: 0;  
+      margin-top: 0;
+    }
+.smaller {
+      font-weight: 100;
+      text-transform: none;
+      font-size: 1.4em;
+    }
+

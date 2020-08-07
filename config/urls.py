@@ -36,6 +36,7 @@ urlpatterns = [
     path('donorthanks/', views.about, name='donorthanks'),
 ]   
 
+
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [
