@@ -12,13 +12,12 @@
   left: 16px;
   font-size: 18px;
 }
-img { 
-  width: 100%;
-  height: auto;
-  opacity: 0.3;
+nav img { 
+  width: 25%;
+  hieght: 20%;
+  opacity: 100%;
+  float: left;
 }
-
-
 
 /* Navigation bar */
 nav ul {
@@ -47,25 +46,22 @@ nav ul li a:hover {
 }
 
 /* Parent submit button */
-
-
-
-
-.headText {
+.homebutton {
     text-align: center;
-    color: coal;
-    font-family: lato;
-    text-transform: uppercase;
+    padding: 50px;
+    height: 10em;
+    position: relative;
 }
-.h1 {
-      font-size: 6em;
-      font-weight: 100;
-      margin-bottom: 0;  
-      margin-top: 0;
-    }
-.smaller {
-      font-weight: 100;
-      text-transform: none;
-      font-size: 1.4em;
-    }
+.homebutton a {
+    margin: 0;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
 

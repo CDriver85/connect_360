@@ -4,20 +4,23 @@
 <p><h1>Parents</h1></p>
 
 
-{% csrf_token %}
-{{ form.as_p }}
+
 
 
 
 
 <div class="headText">
-  <h1>Submit</h1>
+ 
   
 
  
 
 <div>
-<form action="{% url 'parent'}" method='POST'>
+<form action="" method='POST'>
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value='Submit'>
+</form>
 </div>
 
 

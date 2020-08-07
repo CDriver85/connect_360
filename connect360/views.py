@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ParentRequestForm
 from .forms import DonorForm
 
@@ -15,7 +15,7 @@ def parent(request):
         form = ParentRequestForm()
     else:
         form = ParentRequestForm(data=request.POST)
-    if form.is_valid():
+        if form.is_valid():
             form.save()
             return redirect(to='home')
     return render(request, "connect360/parent.html", {"form": form})
@@ -28,9 +28,9 @@ def contact(request):
 
 def donor(request):
     if request.method == 'GET':
-        form = DonorRequestForm()
+        form = DonorForm()
     else:
-        form = DonorRequestForm(data=request.POST)
+        form = DonorForm(data=request.POST)
         if form.is_valid():
             form.save()
             return redirect(to='donor_thanks')

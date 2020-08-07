@@ -26,7 +26,7 @@ urlpatterns = [
     path('accounts/', include( 'registration.backends.simple.urls')),
     
     path('admin/', admin.site.urls),
-    
+
     path('', views.index, name='home'),
     path('school/', views.school, name='school'),
     path('parent/', views.parent, name='parent'),

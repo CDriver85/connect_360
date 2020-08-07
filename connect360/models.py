@@ -36,7 +36,7 @@ class ParentRequest(models.Model):
         return f"{self.name}"
 
     
-class DonorForm(models.Model):
+class Donor(models.Model):
     phone_regex = RegexValidator(
         regex=r'^\+?\d{10}$',
         message="Phone number must be entered in the format: '+9999999999'.")
