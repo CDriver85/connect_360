@@ -4,15 +4,13 @@
 <p><h1>Donor Thank You</h1></p>
 
 
+{% csrf_token %}
+{{ form.as_p }}
 <div>
 <form action="{% url 'donor'}" method='POST'>
 </div>
 
 
 <button class="ui button1">Submit</button>
-
-
- {% csrf_token %}
-{{ form.as_p }}
 
 {% endblock %}

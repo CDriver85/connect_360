@@ -4,12 +4,12 @@
 
 <p><h1>Donor's</h1></p>
 
-<div>
-<form action="{% url 'donor' %}" method="POST">
-</div>   
 
 {% csrf_token %}
 {{ form.as_p }}
+<div>
+<form action="{% url 'donor' %}" method="POST">
+</div>   
 
 <button class="ui button2">Submit</button>
 
