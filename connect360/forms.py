@@ -22,7 +22,7 @@ class ParentalRequestForm(forms.ModelForm):
 
 
 
-class DonorRequestForm(forms.ModelForm):
+class DonorForm(forms.ModelForm):
     class Meta:
         model = Donor
         fields = [
