@@ -37,6 +37,11 @@ class ParentRequest(models.Model):
 
     
 class Donor(models.Model):
+        pass
+        # return f"{self.text}"
+
+
+class DonorRequest(models.Model):       
     phone_regex = RegexValidator(
         regex=r'^\+?\d{10}$',
         message="Phone number must be entered in the format: '+9999999999'.")
@@ -60,6 +65,7 @@ class Donor(models.Model):
     
     number_of_devices = models.CharField(max_length=4, null=True, blank=True)
 
+    date_added = models.DateTimeField(auto_now_add=True)
+
     def __str__(self):
         return f"{self.name}"
-
