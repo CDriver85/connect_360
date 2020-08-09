@@ -1,16 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donor's Thanks</title>
+
+
+
+
+
 {% extends "base.html" %}
 
 {% block content %}
 <p><h1>Donor Thank You</h1></p>
 
 
-{% csrf_token %}
-{{ form.as_p }}
 <div>
-<form action="{% url 'donor'}" method='POST'>
+<form action="{% url 'donorthanks'}" method='POST'>
 </div>
 
 
-<button class="ui button1">Submit</button>
+
 
 {% endblock %}

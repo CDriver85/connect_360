@@ -22,3 +22,5 @@ class DonorRequestForm(forms.ModelForm):
             'email',
             'number_of_devices',
             'school',
+        ]
+

@@ -30,10 +30,12 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('school/', views.school, name='school'),
     path('parent/', views.parent, name='parent'),
+    path('parentres/', views.parentres, name='parentres'),
     path('donor/', views.donor, name='donor'),
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
-    path('donorthanks/', views.about, name='donorthanks'),
+    path('donorthanks/', views.donorthanks, name='donorthanks'),
+    
 ]   
 
 

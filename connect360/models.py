@@ -58,7 +58,7 @@ class Donor(models.Model):
     phone = models.CharField(
         max_length=11, validators=[phone_regex], null=True, blank=True)
     
-    number_of_devices = models.CharField(max_length=1, null=True, blank=True)
+    number_of_devices = models.CharField(max_length=4, null=True, blank=True)
 
     def __str__(self):
         return f"{self.name}"
