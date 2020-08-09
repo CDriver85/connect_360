@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p><h1>Parents</h1></p>
+
+<div class="headText"></div> 
+<div>
+    <center><form action="" method='POST'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value='Submit'>
+    </center>
+</form>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

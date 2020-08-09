@@ -15,7 +15,11 @@ description = "A high-level Python Web framework that encourages rapid developme
 name = "django"
 optional = false
 python-versions = ">=3.6"
+<<<<<<< HEAD
+version = "3.0.9"
+=======
 version = "3.1"
+>>>>>>> master
 
 [package.dependencies]
 asgiref = ">=3.2.10,<3.3.0"
@@ -28,14 +32,23 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 category = "main"
-description = "Country-specific validation helpers, ported from Django Localflavor"
-name = "localflavor"
+description = "A configurable set of panels that display various debug information about the current request/response."
+name = "django-debug-toolbar"
 optional = false
-python-versions = "*"
-version = "1.8"
+python-versions = ">=3.5"
+version = "2.2"
 
 [package.dependencies]
-six = "1.11.0"
+Django = ">=1.11"
+sqlparse = ">=0.2.0"
+
+[[package]]
+category = "main"
+description = "An extensible user-registration application for Django"
+name = "django-registration-redux"
+optional = false
+python-versions = "*"
+version = "2.8"
 
 [[package]]
 category = "main"
@@ -47,14 +60,6 @@ version = "2020.1"
 
 [[package]]
 category = "main"
-description = "Python 2 and 3 compatibility utilities"
-name = "six"
-optional = false
-python-versions = "*"
-version = "1.11.0"
-
-[[package]]
-category = "main"
 description = "Non-validating SQL parser"
 name = "sqlparse"
 optional = false
@@ -62,7 +67,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.1"
 
 [metadata]
-content-hash = "f1d4ab513d39df79c49dc47edb036c862f62056eefa24d8c04e7aba866e9263d"
+content-hash = "ddba52855521fd2faa0129a5ffed8cf25c56de75fa7096f2fdafc18d79892112"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -71,20 +76,25 @@ asgiref = [
     {file = "asgiref-3.2.10.tar.gz", hash = "sha256:7e51911ee147dd685c3c8b805c0ad0cb58d360987b56953878f8c06d2d1c6f1a"},
 ]
 django = [
+<<<<<<< HEAD
+    {file = "Django-3.0.9-py3-none-any.whl", hash = "sha256:96fbe04e8ba0df289171e7f6970e0ff8b472bf4f909ed9e0e5beccbac7e1dbbe"},
+    {file = "Django-3.0.9.tar.gz", hash = "sha256:c22b4cd8e388f8219dc121f091e53a8701f9f5bca9aa132b5254263cab516215"},
+=======
     {file = "Django-3.1-py3-none-any.whl", hash = "sha256:1a63f5bb6ff4d7c42f62a519edc2adbb37f9b78068a5a862beff858b68e3dc8b"},
     {file = "Django-3.1.tar.gz", hash = "sha256:2d390268a13c655c97e0e2ede9d117007996db692c1bb93eabebd4fb7ea7012b"},
+>>>>>>> master
 ]
-localflavor = [
-    {file = "localflavor-1.8-py3-none-any.whl", hash = "sha256:11fa5c32cb78cbb17e9a7727360afa972e99f896342e68f0e06b4910684cd9cc"},
-    {file = "localflavor-1.8.tar.gz", hash = "sha256:eb670e1db14a8e62c116c15177587bdb6db60ea07b810895c1ba14a81b237216"},
+django-debug-toolbar = [
+    {file = "django-debug-toolbar-2.2.tar.gz", hash = "sha256:eabbefe89881bbe4ca7c980ff102e3c35c8e8ad6eb725041f538988f2f39a943"},
+    {file = "django_debug_toolbar-2.2-py3-none-any.whl", hash = "sha256:ff94725e7aae74b133d0599b9bf89bd4eb8f5d2c964106e61d11750228c8774c"},
+]
+django-registration-redux = [
+    {file = "django-registration-redux-2.8.tar.gz", hash = "sha256:ed525f393c452d3f5044148131cafbf50da7bdec9f78b594450bf01ad67085d4"},
+    {file = "django_registration_redux-2.8-py2.py3-none-any.whl", hash = "sha256:ed1ead5398e48bdc37064ab1e269b49301765701984e8d956a641aad2ff3a3ca"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
     {file = "pytz-2020.1.tar.gz", hash = "sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048"},
-]
-six = [
-    {file = "six-1.11.0-py2.py3-none-any.whl", hash = "sha256:832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"},
-    {file = "six-1.11.0.tar.gz", hash = "sha256:70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"},
 ]
 sqlparse = [
     {file = "sqlparse-0.3.1-py2.py3-none-any.whl", hash = "sha256:022fb9c87b524d1f7862b3037e541f68597a730a8843245c349fc93e1643dc4e"},

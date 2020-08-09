@@ -13,9 +13,40 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+
+import registration
 from django.contrib import admin
-from django.urls import path
+from django.conf import settings
+from django.urls import include, path
+from connect360 import views 
+
 
 urlpatterns = [
+    path('accounts/', include( 'registration.backends.simple.urls')),
+    
     path('admin/', admin.site.urls),
-]
+
+    path('', views.index, name='home'),
+    path('school/', views.school, name='school'),
+    path('parent/', views.parent, name='parent'),
+    path('parentres/', views.parentres, name='parentres'),
+    path('donor/', views.donor, name='donor'),
+    path('contact/', views.contact, name='contact'),
+    path('about/', views.about, name='about'),
+    path('donorthanks/', views.donorthanks, name='donorthanks'),
+    
+]   
+
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+
+        # For django versions before 2.0:
+        # url(r'^__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
+
+   
+
