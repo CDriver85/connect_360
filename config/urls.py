@@ -15,30 +15,28 @@ Including another URLconf
 """
 
 
-
 import registration
 from django.contrib import admin
 from django.conf import settings
 from django.urls import include, path
-from connect360 import views
+from connect360 import views 
+
 
 urlpatterns = [
-    path('accounts/', include('registration.backend.simple.urls')),
-    path('admin/', admin.site.urls), 
+    path('accounts/', include( 'registration.backends.simple.urls')),
     
-    path('', views.index, name='home'),
-    path('', views.donorpage, name='donor'),
-   
-]   
+    path('admin/', admin.site.urls),
 
-    #path('donors/add/', donors_views.add_donors, name='add_donors'),
-    #path('donors/<int:pk>/edit/',
-      # donors_views.edit_donor,
-         #name='edit_donor'),
+    path('', views.index, name='home'),
+    path('school/', views.school, name='school'),
+    path('parent/', views.parent, name='parent'),
+    path('parentres/', views.parentres, name='parentres'),
+    path('donor/', views.donor, name='donor'),
+    path('contact/', views.contact, name='contact'),
+    path('about/', views.about, name='about'),
+    path('donorthanks/', views.donorthanks, name='donorthanks'),
     
-    #path('donor/<int:pk>', donor_views.donor_detail,         name='donor_detail'), 
-    #path('donor/<int:donor_pk>/notes',     donors_views.add_note, name="add_note"),
-   # path('donors/<int:pk>/verify', donors_views.verify_donor, name="verify_donor")
+]   
 
 
 if settings.DEBUG:
@@ -50,15 +48,5 @@ if settings.DEBUG:
         # url(r'^__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns
 
-    # view form 
-    # view for home page
-     
-
-
-from django.contrib import admin
-from django.urls import path
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-]
+   
 

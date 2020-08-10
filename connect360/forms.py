@@ -1,37 +1,29 @@
+from django.db import models
 from django import forms
-from django.shortcuts import render
-from .models import ParentalRequest, Donor
+from .models import ParentRequest, Donor
+
 
 # Create your views here.
-class ParentalRequestForm(forms.ModelForm):
-    class meta:
-        model = ParentalRequest
+class ParentRequestForm(forms.ModelForm):
+    class Meta:
+        model = ParentRequest
         fields = [
             'name',
-            'address1',
-            'address2',
+            'address_1',
+            'address_2',
             'city',
             'state',
-            'zip code',
+            'zip_code',
             'email',
             'phone',
             'school',
-            'number_of_devices',
+            'number_of_devices',           
         ]
-
-
-
 
 class DonorForm(forms.ModelForm):
     class Meta:
         model = Donor
         fields = [
-            'name',
-            'phone_number',
-            'email',
-            'number_of_devices',
-            'school',
+            
 
-]
-  
-
+        ]
