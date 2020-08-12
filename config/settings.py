@@ -10,9 +10,22 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
-import os
+# import os
+#  SMPT Configuration
+
+from .email_info import *
+# EMAIL_USE_TLS = EMAIL_USE_TLS
+# EMAIL_HOST = EMAIL_HOST/'smpt.gmail.com'
+# EMAIL_HOST_USER = EMAIL_HOST_USER/'ouremail@gmail.com'
+# EMAIL_HOST-PASSWORD ='EMAIL_HOST_PASSWORD/ourpassword'
+# EMAIL_PORT = EMAIL_PORT/587
+
+
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -25,7 +38,8 @@ SECRET_KEY = 'l126ejd_v%w3d(vw#-sl1qjn=zshtlxh9x%_9bu03zht+k_ygs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['connect360-2--cdriver.repl.co', 'connect360-2.cdriver.repl.co',]
 
 
 # Application definition
@@ -37,6 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'connect360', 
+    'users',
+
 ]
 
 MIDDLEWARE = [
@@ -54,7 +71,9 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,3 +137,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+
+AUTH_USER_MODEL='users.User'  
+

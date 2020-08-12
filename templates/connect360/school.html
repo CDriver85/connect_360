@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<body style="color:white">
+	<p>
+		<h1>School</h1>
+	</p>
+
+	<ul class="request-list">
+		{% for request in requests %}
+		<li> {{request}}</li>
+		{% endfor %}
+	</ul>
+
+	<ul class="donor-list">
+		{% for donor in donors %}
+		<li> {{donor}}</li>
+		{% endfor %}
+	</ul>
+
+	<div class="schoolform">
+		<p>
+			<center>
+				<form action="" method='POST'>
+					{% csrf_token %} {{ form.as_p }}
+					<input type="submit" value='Submit'></form></center></p>
+</div>   
+</body>
+
+{% endblock %}
