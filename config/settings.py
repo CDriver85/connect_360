@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 # import os
 #  SMPT Configuration
-
+import email_info
 from .email_info import *
 # EMAIL_USE_TLS = EMAIL_USE_TLS
 # EMAIL_HOST = EMAIL_HOST/'smpt.gmail.com'
